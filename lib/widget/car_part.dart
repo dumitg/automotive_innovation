@@ -50,8 +50,8 @@ class CarPart extends StatelessWidget {
                   Text(
                     name,
                     style: TextStyle(
-                        fontSize: 25,
-                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500,
                         color: Colors.white),
                     overflow: TextOverflow.ellipsis,
                   ),
@@ -59,9 +59,9 @@ class CarPart extends StatelessWidget {
                   Text(
                     state ? "Deschis" : "Inchis",
                     style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 18,
                         color: Colors.white.withOpacity(0.7),
-                        fontWeight: FontWeight.bold),
+                        fontWeight: FontWeight.w500),
                   ),
                 ],
               ),

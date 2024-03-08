@@ -43,14 +43,14 @@ class Car extends StatelessWidget {
                   ),
                   Positioned(
                       top: 70,
-                      left: 30,
-                      right: 30,
+                      left: 10,
+                      right: 10,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           text(
-                            "Asistență la Conducere",
-                            18,
+                            "ASISTENTA LA NAVIGARE",
+                            22,
                             Colors.white,
                             FontWeight.bold,
                           ),
@@ -85,7 +85,7 @@ class Car extends StatelessWidget {
                                             CrossAxisAlignment.center,
                                         children: <Widget>[
                                           Text(
-                                            'Asistență la Conducere',
+                                            'Asistență la Navigare',
                                             style: TextStyle(
                                               fontSize: 24,
                                               fontWeight: FontWeight.bold,
@@ -139,7 +139,7 @@ class Car extends StatelessWidget {
                               width: 40,
                               decoration: const BoxDecoration(
                                 shape: BoxShape.circle,
-                                color: Colors.white10,
+                                color: Colors.blue,
                               ),
                               child: const Center(
                                 child: Icon(
@@ -191,7 +191,7 @@ class Car extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    text("CONTROALE", 18, Colors.white, FontWeight.w500),
+                    text("CONTROALE", 22, Colors.white, FontWeight.bold),
                     const SizedBox(
                       height: 20,
                     ),

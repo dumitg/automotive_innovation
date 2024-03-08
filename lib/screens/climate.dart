@@ -37,8 +37,8 @@ class Climate extends StatelessWidget {
                   width: Get.width * 0.25,
                 ),
                 text(
-                  "Climă",
-                  30,
+                  "CLIMA",
+                  22,
                   Colors.white,
                   FontWeight.bold,
                   letterspacel: 6,
@@ -46,7 +46,7 @@ class Climate extends StatelessWidget {
               ],
             ),
             const SizedBox(
-              height: 30,
+              height: 50,
             ),
             Obx(
               () => Row(
@@ -178,14 +178,14 @@ class Climate extends StatelessWidget {
                               controller.ac.value
                                   ? "AC este activ"
                                   : "AC este inactiv",
-                              25,
+                              20,
                               Colors.white,
-                              FontWeight.bold),
+                              FontWeight.w500),
                           const SizedBox(
                             height: 10,
                           ),
                           text("   Actual ${controller.value.value.ceil()} C",
-                              18, Colors.white.withOpacity(.5), FontWeight.bold)
+                              18, Colors.white.withOpacity(.5), FontWeight.w500)
                         ],
                       ),
                       Transform.scale(
