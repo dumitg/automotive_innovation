@@ -27,11 +27,15 @@ class Climate extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                const Center(
-                  child: Icon(
+                 Center(
+                  child: GestureDetector(
+                    onTap: (){
+                      Get.back();
+                    },
+                    child: Icon(
                     Icons.arrow_back_ios_outlined,
                     color: Colors.white,
-                  ),
+                  ),),
                 ),
                 SizedBox(
                   width: Get.width * 0.25,
@@ -222,7 +226,7 @@ class Climate extends StatelessWidget {
                   blurRadius: state ? 20 : 0,
                 )
               ],
-              color: state ? Colors.blue : Colors.blue.shade900,
+              color: state ? Colors.blue : Colors.lightGreen,
               shape: BoxShape.circle,
             ),
             child: Center(

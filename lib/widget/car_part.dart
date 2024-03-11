@@ -25,8 +25,7 @@ class CarPart extends StatelessWidget {
       child: Container(
         margin: const EdgeInsets.all(8), // Add some margin around each card
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-        height: 150,
-        width: 170,
+        width: 160,
         decoration: BoxDecoration(
           boxShadow: [
             BoxShadow(
@@ -38,8 +37,7 @@ class CarPart extends StatelessWidget {
           color: backgroundColor,
           borderRadius: BorderRadius.circular(20),
         ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        child: Wrap(
           children: [
             Expanded(
               // Using Expanded to ensure text does not overflow

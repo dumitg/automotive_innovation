@@ -29,11 +29,11 @@ class Car extends StatelessWidget {
                 children: [
                   Positioned(
                     top: 70,
-                    left: 20,
+                    left: -10,
                     child: Align(
                       alignment: Alignment.bottomCenter,
                       child: Container(
-                        height: 300,
+                        height: 400,
                         width: 400,
                         decoration: const BoxDecoration(
                             image: DecorationImage(
@@ -43,13 +43,14 @@ class Car extends StatelessWidget {
                   ),
                   Positioned(
                       top: 70,
-                      left: 10,
-                      right: 10,
+                      left: 20,
+                      right: 20,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           text(
-                            "ASISTENTA LA NAVIGARE",
+                            "ASISTENTA \nLA NAVIGARE",
                             22,
                             Colors.white,
                             FontWeight.bold,
@@ -97,7 +98,7 @@ class Car extends StatelessWidget {
                                             padding: EdgeInsets.all(10),
                                             decoration: BoxDecoration(
                                               color:
-                                                  Colors.white.withOpacity(0.8),
+                                                  Colors.white.withOpacity(0.5),
                                               borderRadius:
                                                   BorderRadius.circular(15),
                                             ),
@@ -162,7 +163,9 @@ class Car extends StatelessWidget {
                   ElevatedButton.icon(
                     icon: Icon(Icons.traffic, color: Colors.white),
                     label: Text('Indicatoare Auto'),
-                    onPressed: () => controller.setEngine(),
+                    onPressed: () {
+                      Get.to('/detection');
+                    },
                     style: ElevatedButton.styleFrom(
                       primary: Colors.blue.shade700,
                       onPrimary: Colors.white,
@@ -191,7 +194,7 @@ class Car extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    text("CONTROALE", 22, Colors.white, FontWeight.bold),
+                    text(" CONTROALE", 22, Colors.white, FontWeight.bold),
                     const SizedBox(
                       height: 20,
                     ),
@@ -209,7 +212,7 @@ class Car extends StatelessWidget {
                         ),
                         Obx(
                           () => CarPart(
-                              name: "Climă",
+                              name: "Clima",
                               state: controller.door.value,
                               onTap: () => controller.setDoor()),
                         )

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'dashboard_screen.dart';
+import 'ml/detection.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
       home: SplashScreen(),
       getPages: [
         GetPage(name: '/dashboard', page: () => DashboardScreen()),
+        GetPage(name: '/detection', page: () => Detection()),
       ],
       themeMode: ThemeMode.dark,
       darkTheme: ThemeData(
