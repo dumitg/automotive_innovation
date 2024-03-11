@@ -22,6 +22,8 @@ class _ObjectDetectorView extends State<ObjectDetectorView> {
   int _option = 0;
   final _options = {
     'default': '',
+    'device-classification':
+        'lite-model_on_device_vision_classifier_landmarks_classifier_north_america_V1_1.tflite',
     'object_custom': 'object_labeler.tflite',
     'fruits': 'object_labeler_fruits.tflite',
     'flowers': 'object_labeler_flowers.tflite',

@@ -164,7 +164,7 @@ class Car extends StatelessWidget {
                     icon: Icon(Icons.traffic, color: Colors.white),
                     label: Text('Indicatoare Auto'),
                     onPressed: () {
-                      Get.to('/detection');
+                      Get.toNamed('/detection');
                     },
                     style: ElevatedButton.styleFrom(
                       primary: Colors.blue.shade700,
